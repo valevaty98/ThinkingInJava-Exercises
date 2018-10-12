@@ -16,11 +16,15 @@ public class SimpleClass {
         DataOnly data = new DataOnly();
         System.out.println("" + data.i + " " + data.d + " " + data.b);
 
+        //Ex. 8
         System.out.println("---------");
-        System.out.println(Incrementable.num);
-        Incrementable.increment();
-        Incrementable.increment();
-        System.out.println(Incrementable.num);
+        Incrementable inc1 = new Incrementable();
+        Incrementable inc2 = new Incrementable();
+
+        System.out.println(inc1.num + " " + inc2.num);
+        inc1.num++;
+        System.out.println(inc2.num);
+
     }
 }
 
