@@ -32,6 +32,23 @@ public class SimpleClass {
         Double dOb = 4.8;
         System.out.println(iOb + " " + dOb);
 
+        System.out.println("---------");
+        AllTheColorsOfTheRainbow color = new AllTheColorsOfTheRainbow(7);
+        System.out.println(color.anIntegerRepresentingColors);
+        color.changeTheHueOfTheColor(10);
+        System.out.println(color.anIntegerRepresentingColors);
+
+    }
+}
+
+//Ex. 11
+class AllTheColorsOfTheRainbow {
+    int anIntegerRepresentingColors;
+    void changeTheHueOfTheColor(int newHue){
+        anIntegerRepresentingColors = newHue;
+    }
+    AllTheColorsOfTheRainbow(int hue) {
+        anIntegerRepresentingColors = hue;
     }
 }
 
