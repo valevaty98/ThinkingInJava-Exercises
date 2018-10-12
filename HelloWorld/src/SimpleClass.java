@@ -1,11 +1,22 @@
 // Ex. 1
 
-import javax.sound.midi.Soundbank;
-
+/** Testing javadoc
+ * Comments to the class
+ * Can <em>insert</em> list
+ * <ol>
+ *     <li>First elem</li>
+ *     <li>Second elem</li>
+ * </ol>
+ */
 public class SimpleClass {
+    /** Comments to the variable */
     int defaultInt;
+    /** Comments to the variable */
     char defaultChar;
 
+    /** Comments to the method
+     * @param args params from command line
+     */
     public static void main (String[] args) {
         SimpleClass sc = new SimpleClass();
         String str = "Int: " + sc.defaultInt + ". Char: " + sc.defaultChar + ".";
@@ -39,6 +50,14 @@ public class SimpleClass {
         System.out.println(color.anIntegerRepresentingColors);
 
     }
+}
+
+//Ex.14
+class Documentation1{
+    int dovInt;
+    String doStr(int i) {
+        return " " + i + " ";
+    };
 }
 
 //Ex. 11
