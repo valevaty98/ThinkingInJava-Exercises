@@ -5,7 +5,9 @@ public class SimpleClass {
     char defaultChar;
     public static void main (String[] args) {
         SimpleClass sc = new SimpleClass();
-        System.out.println("Int: " + sc.defaultInt + ". Char: " + sc.defaultChar + ".");
+        String str = "Int: " + sc.defaultInt + ". Char: " + sc.defaultChar + ".";
+        System.out.println(str);
+        System.out.println(new ATypeName().storage(str));
 
         System.out.println(new ATypeName(7).id);
 
@@ -14,11 +16,15 @@ public class SimpleClass {
     }
 }
 
-//Ex.3
+//Ex.6
 class ATypeName {
     int id;
     ATypeName (int id) {
         this.id = id;
+    }
+    ATypeName(){}
+    int storage(String s) {
+        return s.length()*2;
     }
 }
 
