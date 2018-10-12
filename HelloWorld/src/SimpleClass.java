@@ -1,5 +1,7 @@
 // Ex. 1
 
+import javax.sound.midi.Soundbank;
+
 public class SimpleClass {
     int defaultInt;
     char defaultChar;
@@ -13,6 +15,20 @@ public class SimpleClass {
 
         DataOnly data = new DataOnly();
         System.out.println("" + data.i + " " + data.d + " " + data.b);
+
+        System.out.println("---------");
+        System.out.println(Incrementable.num);
+        Incrementable.increment();
+        Incrementable.increment();
+        System.out.println(Incrementable.num);
+    }
+}
+
+//Ex. 7
+class Incrementable {
+    static int num;
+    static void increment() {
+        Incrementable.num++;
     }
 }
 
