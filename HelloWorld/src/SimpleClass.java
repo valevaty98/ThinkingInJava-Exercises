@@ -5,6 +5,7 @@ import javax.sound.midi.Soundbank;
 public class SimpleClass {
     int defaultInt;
     char defaultChar;
+
     public static void main (String[] args) {
         SimpleClass sc = new SimpleClass();
         String str = "Int: " + sc.defaultInt + ". Char: " + sc.defaultChar + ".";
@@ -24,6 +25,12 @@ public class SimpleClass {
         System.out.println(inc1.num + " " + inc2.num);
         inc1.num++;
         System.out.println(inc2.num);
+
+        //Ex.9
+        System.out.println("---------");
+        Integer iOb = 7;
+        Double dOb = 4.8;
+        System.out.println(iOb + " " + dOb);
 
     }
 }
