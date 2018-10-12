@@ -22,9 +22,15 @@ class ATypeName {
     }
 }
 
-//Ex. 4
+//Ex. 5
 class DataOnly {
-    int i;
-    double d;
-    boolean b;
+    int i = 5;
+    double d = 5.0;
+    boolean b = true;
+    DataOnly(int i, double d, boolean b) {
+        this.i = i;
+        this.d = d;
+        this.b = b;
+    }
+    DataOnly(){}
 }
