@@ -57,6 +57,13 @@ public class Main {
         float e1 = 2.14e9f;
         double e2 = -21.47e8;
         System.out.println(e1 + " " + " " +  e2);
+
+        //Ex. 10
+        final int i1= 0x5555;
+        final int i2= 0xAAAA;
+        System.out.println(Integer.toBinaryString(i1 & i2));
+        System.out.println(Integer.toBinaryString(i1 | i2));
+        System.out.println(Integer.toBinaryString(i1 ^ i2));
     }
 }
 
