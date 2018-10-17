@@ -22,5 +22,22 @@ public class Main {
         System.out.println(m1.f);
 
         System.out.println("Speed: " + calculateSpeed(10, 500));
+
+        Dog dog1 = new Dog("spot", "Spot Gav!");
+        Dog dog2 = new Dog("scraffy", "Scraffy Gav!");
+
+        System.out.println(dog1.name + ": "  + dog1.says);
+        System.out.println(dog2.name + ": " + dog2.says);
+    }
+}
+
+//Ex. 5
+class Dog {
+    String name;
+    String says;
+
+    Dog(String name, String says){
+        this.name = name;
+        this.says = says;
     }
 }
