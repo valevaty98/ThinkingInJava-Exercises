@@ -5,6 +5,20 @@ import java.util.Random;
 
 //Ex. 20
 public class execControl {
+//Ex. 23
+    static void outputFibonachi(int number) {
+
+        int[] nums = new int[number];
+
+        for (int i = 0; i < number; i++) {
+            if (i == 0 || i == 1) nums[i] = 1;
+            else nums[i] = nums[i-1] + nums[i-2];
+        }
+        for (int i = 0; i < number; i++) {
+            System.out.print(nums[i] + " ");
+        }
+
+    }
 
     public static void main(String[] args) {
 
@@ -45,6 +59,7 @@ public class execControl {
             }
             c++;
         }
+        outputFibonachi(7);
     }
 
 
