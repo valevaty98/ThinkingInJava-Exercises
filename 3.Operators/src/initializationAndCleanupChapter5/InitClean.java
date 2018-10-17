@@ -31,6 +31,14 @@ public class InitClean {
 
         new staticString().show();
 
+        System.out.println("---------");
+        
+        //Ex. 16
+        String[] strs = new String[]{"hello", "my", "dear"};
+
+        for (String s : strs) {
+            System.out.println(s);
+        }
     }
 }
 
