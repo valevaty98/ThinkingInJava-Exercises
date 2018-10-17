@@ -50,7 +50,7 @@ public class InitClean {
 
         StrString[] strings;
 
-        f(strs, "oki", "koki");
+        f(strs, args);
     }
 }
 
