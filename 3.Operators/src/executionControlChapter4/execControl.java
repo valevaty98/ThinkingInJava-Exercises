@@ -20,6 +20,33 @@ public class execControl {
 
     }
 
+    //Ex. 24
+    static void findVampires() {
+        int[] numeral = new int[4];
+        for (int i = 1000; i < 10000; i++) {
+            numeral[0] = i % 10000 / 1000;
+            numeral[1] = i % 1000 / 100;
+            numeral[2] = i % 100 / 10;
+            numeral[3] = i % 10;
+
+            if ( i == (numeral[0] * 10 + numeral[1]) * (numeral[2] * 10 + numeral[3]) ||
+                    i == (numeral[1] * 10 + numeral[0]) * (numeral[2] * 10 + numeral[3]) ||
+                    i == (numeral[0] * 10 + numeral[1]) * (numeral[3] * 10 + numeral[2]) ||
+                    i == (numeral[1] * 10 + numeral[0]) * (numeral[3] * 10 + numeral[2]) ||
+                    i == (numeral[0] * 10 + numeral[2]) * (numeral[1] * 10 + numeral[3]) ||
+                    i == (numeral[0] * 10 + numeral[2]) * (numeral[3] * 10 + numeral[1]) ||
+                    i == (numeral[2] * 10 + numeral[0]) * (numeral[1] * 10 + numeral[3]) ||
+                    i == (numeral[2] * 10 + numeral[0]) * (numeral[3] * 10 + numeral[1]) ||
+                    i == (numeral[0] * 10 + numeral[3]) * (numeral[1] * 10 + numeral[2]) ||
+                    i == (numeral[0] * 10 + numeral[3]) * (numeral[2] * 10 + numeral[1]) ||
+                    i == (numeral[3] * 10 + numeral[0]) * (numeral[1] * 10 + numeral[2]) ||
+                    i == (numeral[3] * 10 + numeral[0]) * (numeral[2] * 10 + numeral[1]) ) {
+                System.out.println(i + " is a Vampire");
+
+            }
+
+        }
+    }
     public static void main(String[] args) {
 
         Random rand = new Random();
@@ -60,6 +87,8 @@ public class execControl {
             c++;
         }
         outputFibonachi(7);
+        System.out.println("-----------");
+        findVampires();
     }
 
 
