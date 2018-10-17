@@ -14,15 +14,18 @@ public class InitClean {
 
         Dog dog = new Dog();
         dog.bark(5, 'g');
-        dog.bark('R', 10);
-        dog.bark(false);
+//        dog.bark('R', 10);
+//        dog.bark(false);
     }
 }
 
 //Ex. 6
 class Dog {
+    //Ex. 8
     void bark(int i, char c) {
         System.out.println("Bark " + i + " times " + c);
+        bark(c,i);
+        this.bark(c,i);
     }
 
     void bark(char c, int n) {
