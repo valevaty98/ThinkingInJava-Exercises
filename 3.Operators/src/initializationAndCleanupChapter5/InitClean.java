@@ -13,23 +13,23 @@ public class InitClean {
         InitClean ic2 = new InitClean();
 
         Dog dog = new Dog();
-        dog.bark(5);
-        dog.bark('R');
+        dog.bark(5, 'g');
+        dog.bark('R', 10);
         dog.bark(false);
     }
 }
 
-//Ex. 5
+//Ex. 6
 class Dog {
-    void bark(int i) {
-        System.out.println("Bark " + i + " times.");
+    void bark(int i, char c) {
+        System.out.println("Bark " + i + " times " + c);
     }
 
-    void bark(char c) {
-        for(int i = 0; i < 10; i ++) {
+    void bark(char c, int n) {
+        for(int i = 0; i < n; i ++) {
             System.out.print(c);
         }
-        System.out.println(c);
+        System.out.println(" " + n + " times");
     }
 
     void bark(boolean b) {
