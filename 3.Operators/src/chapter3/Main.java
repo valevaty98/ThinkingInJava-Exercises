@@ -46,6 +46,12 @@ public class Main {
         System.out.println(dog1.equals(dog3)); //false (equals() must be overriding
 
         System.out.println(tossACoin());
+
+        //Ex. 8
+        long l1 = 0x20L; //16
+        long l2 = 020L;  //8
+        System.out.println(Long.toBinaryString(l1));
+        System.out.println(Long.toBinaryString(l2));
     }
 }
 
