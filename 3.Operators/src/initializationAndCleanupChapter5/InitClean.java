@@ -53,4 +53,12 @@ class Dog {
         }
 
     }
+
+    //Ex. 10
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("finalize()"); //not working
+        super.finalize();
+    }
 }
