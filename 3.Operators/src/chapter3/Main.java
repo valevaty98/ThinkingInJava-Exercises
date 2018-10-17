@@ -22,12 +22,24 @@ public class Main {
         Random rand = new Random();
         int num = rand.nextInt(100);
         System.out.println(num);
-        return (num % 2 == 1)? "Орёл!": "Решка!";
+        return (num % 2 == 1) ? "Орёл!" : "Решка!";
     }
 
     //Ex. 13
     static void charToBinaryString(char c) {
         System.out.println(Integer.toBinaryString(c));
+    }
+
+    static boolean f(boolean b) {
+        return b ? true : false;
+    }
+
+    //Ex. 14
+    static void compareStrings(String s1, String s2) {
+        f(s1 == s2);
+        f(s1.equals(s2));
+        f(s1 != s2);
+        f(s1.length() > s2.length());
     }
 
     public static void main(String[] args) {
@@ -41,7 +53,7 @@ public class Main {
         Dog dog1 = new Dog("spot", "Spot Gav!");
         Dog dog2 = new Dog("scraffy", "Scraffy Gav!");
 
-        System.out.println(dog1.name + ": "  + dog1.says);
+        System.out.println(dog1.name + ": " + dog1.says);
         System.out.println(dog2.name + ": " + dog2.says);
 
         //Ex. 6
@@ -61,11 +73,11 @@ public class Main {
         //Ex. 9
         float e1 = 2.14e9f;
         double e2 = -21.47e8;
-        System.out.println(e1 + " " + " " +  e2);
+        System.out.println(e1 + " " + " " + e2);
 
         //Ex. 10
-        final int i1= 0x5555;
-        final int i2= 0xAAAA;
+        final int i1 = 0x5555;
+        final int i2 = 0xAAAA;
         System.out.println(Integer.toBinaryString(i1 & i2));
         System.out.println(Integer.toBinaryString(i1 | i2));
         System.out.println(Integer.toBinaryString(i1 ^ i2));
@@ -95,7 +107,7 @@ class Dog {
     String name;
     String says;
 
-    Dog(String name, String says){
+    Dog(String name, String says) {
         this.name = name;
         this.says = says;
     }
