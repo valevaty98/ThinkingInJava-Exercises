@@ -64,6 +64,12 @@ public class Main {
         System.out.println(Integer.toBinaryString(i1 & i2));
         System.out.println(Integer.toBinaryString(i1 | i2));
         System.out.println(Integer.toBinaryString(i1 ^ i2));
+
+        //Ex. 11
+        final short i3 = 0x7101;
+        for (int j = 1; j <= 15; j++) {
+            System.out.println(Integer.toBinaryString(i3 >> j));
+        }
     }
 }
 
