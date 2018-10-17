@@ -29,19 +29,19 @@ public class InitClean {
 
         tk.finalize();
 
-        staticString.show();
+        new staticString().show();
 
     }
 }
 
-//Ex. 14
-class staticString {
-    static String str1 = "Static string 1.";
-    static String str2;
-    static {
+//Ex. 15
+class staticString{
+    String str1 = "Static string 1.";
+    String str2;
+    {
         str2 = "Static string 2.";
     }
-    static void show() {
+    void show() {
         System.out.println(str1 + "\n" + str2);
     }
 }
