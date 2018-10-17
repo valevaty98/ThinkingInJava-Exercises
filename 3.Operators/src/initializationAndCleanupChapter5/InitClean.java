@@ -8,6 +8,16 @@ public class InitClean {
     InitClean(String str) {
         System.out.println("Hello, " + str);
     }
+
+    //Ex. 19
+    static void f(String[] strs, String... args) {
+        for (String s: strs) {
+            System.out.println(s);
+        }
+        for (String s: args) {
+            System.out.println(s);
+        }
+    }
     public static void main(String[] args) throws Throwable {
         InitClean ic1 = new InitClean("howdy?");
         InitClean ic2 = new InitClean();
@@ -29,28 +39,25 @@ public class InitClean {
 
         tk.finalize();
 
-        new staticString().show();
-
         System.out.println("---------");
-        
+
         //Ex. 16
         String[] strs = new String[]{"hello", "my", "dear"};
 
         for (String s : strs) {
             System.out.println(s);
         }
+
+        StrString[] strings;
+
+        f(strs, "oki", "koki");
     }
 }
 
-//Ex. 15
-class staticString{
-    String str1 = "Static string 1.";
-    String str2;
-    {
-        str2 = "Static string 2.";
-    }
-    void show() {
-        System.out.println(str1 + "\n" + str2);
+//Ex. 17
+class StrString{
+    StrString(String s) {
+        System.out.println(s);
     }
 }
 
