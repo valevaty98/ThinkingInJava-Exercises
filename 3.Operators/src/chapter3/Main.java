@@ -52,6 +52,11 @@ public class Main {
         long l2 = 020L;  //8
         System.out.println(Long.toBinaryString(l1));
         System.out.println(Long.toBinaryString(l2));
+
+        //Ex. 9
+        float e1 = 2.14e9f;
+        double e2 = -21.47e8;
+        System.out.println(e1 + " " + " " +  e2);
     }
 }
 
