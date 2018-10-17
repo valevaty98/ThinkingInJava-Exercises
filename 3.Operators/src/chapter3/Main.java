@@ -1,5 +1,7 @@
 package chapter3;
 
+import java.util.Random;
+
 //Ex. 3
 public class Main {
     float f;
@@ -13,6 +15,14 @@ public class Main {
         float speed;
         speed = distance / time;
         return speed;
+    }
+
+    //Ex. 7
+    static String tossACoin() {
+        Random rand = new Random();
+        int num = rand.nextInt(100);
+        System.out.println(num);
+        return (num % 2 == 1)? "Орёл!": "Решка!";
     }
 
     public static void main(String[] args) {
@@ -34,6 +44,8 @@ public class Main {
 
         System.out.println(dog1 == dog3); //false
         System.out.println(dog1.equals(dog3)); //false (equals() must be overriding
+
+        System.out.println(tossACoin());
     }
 }
 
