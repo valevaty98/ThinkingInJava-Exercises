@@ -29,6 +29,20 @@ public class InitClean {
 
         tk.finalize();
 
+        staticString.show();
+
+    }
+}
+
+//Ex. 14
+class staticString {
+    static String str1 = "Static string 1.";
+    static String str2;
+    static {
+        str2 = "Static string 2.";
+    }
+    static void show() {
+        System.out.println(str1 + "\n" + str2);
     }
 }
 
