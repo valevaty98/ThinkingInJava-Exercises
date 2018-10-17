@@ -51,6 +51,11 @@ public class InitClean {
         StrString[] strings;
 
         f(strs, args);
+
+        //Ex. 21
+        for (TypesOfBanknouts type : TypesOfBanknouts.values()) {
+            System.out.println(type + " " + type.ordinal());
+        }
     }
 }
 
