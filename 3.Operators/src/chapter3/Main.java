@@ -1,14 +1,16 @@
 package chapter3;
 
-//Ex. 2
+//Ex. 3
 public class Main {
     float f;
 
+    static void f(Main m) {
+        m.f = 9;
+    }
     public static void main(String[] args) {
         Main m1 = new Main();
-        Main m2 = m1;
 
-        m1.f = 7;
-        System.out.println(m2.f);
+        f(m1);
+        System.out.println(m1.f);
     }
 }
