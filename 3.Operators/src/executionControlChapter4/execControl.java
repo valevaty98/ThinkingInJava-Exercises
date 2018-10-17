@@ -3,7 +3,7 @@ package executionControlChapter4;
 import java.nio.Buffer;
 import java.util.Random;
 
-//Ex. 17
+//Ex. 18
 public class execControl {
 
     public static void main(String[] args) {
@@ -11,21 +11,22 @@ public class execControl {
         Random rand = new Random();
         int[] nums = new int[25];
 
-        nums[0] = rand.nextInt(100);
-        System.out.println(nums[0]);
-
-        int i = 1;
-        while (true) {
-            nums[i] = rand.nextInt(100);
-            System.out.print(nums[i] + " ");
-            if (nums[i] > nums[i - 1]) {
-                System.out.println("more");
-            } else {
-                System.out.println("less");
+        int i = 0;
+        boolean isPrime;
+        while (i < 20) {
+            nums[i] = rand.nextInt(100) + 3;
+            isPrime = true;
+            for (int j = 2; j < nums[i] / 2 + 1; j++) {
+                if (nums[i] % j == 0) {
+                    isPrime = false;
+                }
             }
-            if (i < 24) i++;
-            else i = 1;
+            if (isPrime) System.out.println(nums[i] + " is prime");
+            else System.out.println(nums[i] + " isn't prime");
+            i++;
         }
+
+
     }
 
 
