@@ -28,6 +28,12 @@ public class Main {
 
         System.out.println(dog1.name + ": "  + dog1.says);
         System.out.println(dog2.name + ": " + dog2.says);
+
+        //Ex. 6
+        Dog dog3 = new Dog("spot", "Spot Gav!");
+
+        System.out.println(dog1 == dog3); //false
+        System.out.println(dog1.equals(dog3)); //false (equals() must be overriding
     }
 }
 
