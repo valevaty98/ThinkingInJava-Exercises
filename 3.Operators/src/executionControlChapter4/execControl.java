@@ -1,8 +1,9 @@
 package executionControlChapter4;
 
+import java.nio.Buffer;
 import java.util.Random;
 
-//Ex. 2
+//Ex. 17
 public class execControl {
 
     public static void main(String[] args) {
@@ -12,8 +13,9 @@ public class execControl {
 
         nums[0] = rand.nextInt(100);
         System.out.println(nums[0]);
-        
-        for (int i = 1; i < 25; i++) {
+
+        int i = 1;
+        while (true) {
             nums[i] = rand.nextInt(100);
             System.out.print(nums[i] + " ");
             if (nums[i] > nums[i - 1]) {
@@ -21,6 +23,8 @@ public class execControl {
             } else {
                 System.out.println("less");
             }
+            if (i < 24) i++;
+            else i = 1;
         }
     }
 
