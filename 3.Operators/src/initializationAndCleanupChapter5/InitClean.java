@@ -8,7 +8,7 @@ public class InitClean {
     InitClean(String str) {
         System.out.println("Hello, " + str);
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Throwable {
         InitClean ic1 = new InitClean("howdy?");
         InitClean ic2 = new InitClean();
 
@@ -23,8 +23,35 @@ public class InitClean {
         } catch (Throwable e) {
             return;
         }
+
+        Tank tk = new Tank();
+        tk.add(10);
+
+        tk.finalize();
+
     }
 }
+
+//Ex. 12
+class Tank {
+    int capacity;
+
+    void add(int num) {
+        capacity += num;
+    }
+
+    void toEmpty() {
+        System.out.println("toEmpty()");
+        capacity = 0;
+    }
+
+    @Override
+    protected void finalize() throws Throwable{
+        this.toEmpty();
+        super.finalize();
+    }
+}
+
 
 //Ex. 6
 class Dog {
