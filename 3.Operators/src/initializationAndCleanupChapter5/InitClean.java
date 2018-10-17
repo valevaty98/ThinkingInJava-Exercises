@@ -12,7 +12,7 @@ public class InitClean {
         InitClean ic1 = new InitClean("howdy?");
         InitClean ic2 = new InitClean();
 
-        Dog dog = new Dog();
+        Dog dog = new Dog(7);
         dog.bark(5, 'g');
 //        dog.bark('R', 10);
 //        dog.bark(false);
@@ -21,6 +21,16 @@ public class InitClean {
 
 //Ex. 6
 class Dog {
+
+    //Ex. 9
+    Dog() {
+        //this(7);
+        System.out.println("Dog()");
+    }
+    Dog(int num) {
+        this();
+        System.out.println("Dog(" + num + ")");
+    }
     //Ex. 8
     void bark(int i, char c) {
         System.out.println("Bark " + i + " times " + c);
