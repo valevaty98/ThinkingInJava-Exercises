@@ -70,6 +70,14 @@ public class Main {
         for (int j = 1; j <= 15; j++) {
             System.out.println(Integer.toBinaryString(i3 >> j));
         }
+        System.out.println("---------");
+        //Ex. 12
+        int i4 = 0x7fffffff;
+        System.out.println(Integer.toBinaryString(i4));
+        i4 = i4 << 31;
+        for (int j = 0; j <= 31; j++) {
+            System.out.println(Integer.toBinaryString(i4 >>> j));
+        }
     }
 }
 
