@@ -1,14 +1,15 @@
 package initializationAndCleanupChapter5;
 
 public class InitClean {
-    //Ex. 2
-    String str1 = "Bye", str2;
+    //Ex. 3,4
+    InitClean() {
+        System.out.println("Hello!");
+    }
     InitClean(String str) {
-        str2 = str;
+        System.out.println("Hello, " + str);
     }
     public static void main(String[] args) {
-        InitClean ic = new InitClean("Hello");
-        System.out.println(ic.str1 + " " + ic.str2);
-
+        InitClean ic1 = new InitClean("howdy?");
+        InitClean ic2 = new InitClean();
     }
 }
