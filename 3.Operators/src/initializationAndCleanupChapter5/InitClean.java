@@ -1,5 +1,7 @@
 package initializationAndCleanupChapter5;
 
+import java.lang.reflect.Type;
+
 public class InitClean {
     //Ex. 3,4
     InitClean() {
@@ -55,6 +57,19 @@ public class InitClean {
         //Ex. 21
         for (TypesOfBanknouts type : TypesOfBanknouts.values()) {
             System.out.println(type + " " + type.ordinal());
+        }
+
+        TypesOfBanknouts type = TypesOfBanknouts.SECOND;
+
+        //Ex. 22
+        switch (type) {
+            case FIRST:
+                break;
+            case SECOND:
+                System.out.println(type);
+                break;
+            default:
+                System.out.println("Nothing match");
         }
     }
 }
