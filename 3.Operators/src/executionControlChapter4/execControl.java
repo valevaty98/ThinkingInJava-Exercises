@@ -25,11 +25,26 @@ public class execControl {
             else System.out.println(nums[i] + " isn't prime");
             i++;
             if (i == 20) {
-                return;
+                break;
             }
         }
-
-
+//Ex. 22
+        char c = 'a';
+        for (int k = 0; k < 5; k++) {
+            switch (c) {
+                case 'a':
+                    System.out.println("aaa");
+                    break;
+                case 'b':
+                    System.out.println("bbb");
+                case 'c':
+                    System.out.println("ccc");
+                    break;
+                default:
+                    System.out.println("nothing");
+            }
+            c++;
+        }
     }
 
 
