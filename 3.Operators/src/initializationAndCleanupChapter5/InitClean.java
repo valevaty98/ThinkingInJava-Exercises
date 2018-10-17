@@ -16,6 +16,13 @@ public class InitClean {
         dog.bark(5, 'g');
 //        dog.bark('R', 10);
 //        dog.bark(false);
+
+        //Ex. 11
+        try {
+            dog.finalize();
+        } catch (Throwable e) {
+            return;
+        }
     }
 }
 
