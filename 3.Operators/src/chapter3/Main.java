@@ -25,6 +25,11 @@ public class Main {
         return (num % 2 == 1)? "Орёл!": "Решка!";
     }
 
+    //Ex. 13
+    static void charToBinaryString(char c) {
+        System.out.println(Integer.toBinaryString(c));
+    }
+
     public static void main(String[] args) {
         Main m1 = new Main();
 
@@ -78,6 +83,10 @@ public class Main {
         for (int j = 0; j <= 31; j++) {
             System.out.println(Integer.toBinaryString(i4 >>> j));
         }
+
+        charToBinaryString('H');
+        charToBinaryString('A');
+        charToBinaryString('B');
     }
 }
 
